@@ -12,13 +12,13 @@ function exibirTextoNaTela(tag, texto) {
 
 exibirTextoNaTela('h1', 'Número secreto')
 exibirTextoNaTela('P', 'Escolha um número entre 1 a 10')
-  
+
+
 function verificarChute() {
-    console.log('o botão foi clicado');
+    let chute = document.querySelector('input').value
+    console.log(chute == numeroSecreto);
 }
-function verificarChute() {
-    console.log(numeroSecreto);
-}
+
 function gerarUmNumeroAleatorio() {
    return parseInt(Math.random() * 10 + 1)
 }
